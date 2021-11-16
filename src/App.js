@@ -11,7 +11,7 @@ function App() {
               <p className="subtitle">Please login to continue</p>
             </div>
 
-            <div className="login-form-container">
+            <div className="">
               <div className="form-input">
                 <label htmlFor="email" className="label">
                   Email address
@@ -27,8 +27,8 @@ function App() {
               <div className="login-btn">
                 <button className="button">Button Text</button>
               </div>
-              <div className="new-scratch-text">new to Scratch</div>
-              <div className="button-text">Button Text</div>
+              <div className="forgot-password-text">forgot password?</div>
+              <div className="sign-up-text">Sign up</div>
             </div>
           </div>
         </div>
