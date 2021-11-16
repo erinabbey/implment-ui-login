@@ -1,0 +1,158 @@
+@import "base/button";
+@import "base/font";
+@import "base/variables";
+$background-image: url("../images/background.jpeg");
+$background-image-leftpanel: url("../images/Group.png");
+body {
+  .container {
+    background-image: $background-image;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    background-image: $background-image;
+    background-size: cover;
+    background-blend-mode: overlay;
+  }
+  // include left and right panel
+  .login-content {
+    color: #030f09;
+    background: rgba(253, 253, 253);
+    border-radius: 7px;
+    box-shadow: 0 8px 16px rgba(119, 119, 119, 0.1),
+      0 8px 8px rgba(119, 119, 119, 0.1);
+    position: absolute;
+    overflow: hidden;
+    width: 768px;
+    max-width: 100%;
+    min-height: 480px;
+    margin: auto;
+  }
+  // right panel: login content
+  .login-container {
+    position: absolute;
+    left: 50%;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+  }
+  .login {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  //left content: background, logo, text
+  .left-panel {
+    background-image: $background-image-leftpanel;
+    background-size: cover;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    height: 100%;
+    width: 50%;
+  }
+  // logo and text on the left panel
+  .text-container {
+    width: 100%;
+    height: 62px;
+  }
+  .text {
+    font-size: 44.8px;
+    color: #363837;
+    letter-spacing: 0.9px;
+    line-height: 44.8px;
+  }
+
+  // main content include text, label, input, button
+  .right-panel {
+    width: 100%;
+    z-index: 1;
+  }
+
+  .header {
+    font-family: Helvetica;
+    font-size: 24px;
+    color: #030f09;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 32px;
+    text-align: left;
+  }
+
+  .subtitle {
+    font-family: Helvetica;
+    font-size: 14px;
+    color: #606060;
+    letter-spacing: 0;
+    line-height: 22px;
+  }
+
+  .login-form-contaienr {
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    position: absolute;
+  }
+
+  .form-input {
+    height: 65px;
+    text-align: left;
+    margin-bottom: 0.5rem;
+  }
+
+  .label {
+    font-family: Helvetica;
+    font-size: 14px;
+    color: #a8a8a8;
+    letter-spacing: 0;
+    line-height: 22px;
+  }
+
+  .input {
+    font-family: Helvetica;
+    font-size: 16px;
+    color: #030f09;
+    letter-spacing: 0;
+    line-height: 22px;
+    border: none;
+    width: 100%;
+    display: block;
+    outline: none;
+    border-bottom: 1px solid #cccccc;
+  }
+  .input:focus {
+    background: #fff;
+  }
+
+  //button text
+  .login-btn {
+    margin: auto;
+    width: 100%;
+  }
+
+  .new-scratch-text {
+    font-family: Helvetica;
+    font-size: 14px;
+    color: #a8a8a8;
+    letter-spacing: 0;
+    text-align: center;
+    line-height: 22px;
+  }
+  .button-text {
+    font-family: Helvetica;
+    font-size: 16px;
+    color: #30be76;
+    letter-spacing: 0.32px;
+    text-align: center;
+  }
+}

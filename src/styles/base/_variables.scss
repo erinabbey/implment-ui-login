@@ -1,0 +1,21 @@
+// common variable
+$color_of_text: #030f09;
+$color_of_button_text: #30be76;
+$color_of_label: #a8a8a8;
+// color
+$main_color: $color_of_text;
+$text_color: #363837;
+$header_color: $color_of_text;
+$subtitle_color: #606060;
+$label_color: $color_of_label;
+$input_color: $color_of_text;
+$button_color: #fff;
+$footer_text_color: $color_of_button_text;
+
+// background
+$background_container: rgba(253, 253, 253, 0.904);
+$background_button: $color_of_button_text;
+//border color
+$border_container_shadow: 0 8px 16px rgba(119, 119, 119, 0.1),
+  0 8px 8px rgba(119, 119, 119, 0.1);
+$border_bottm_input: rgba(255, 255, 255, 0.44);
